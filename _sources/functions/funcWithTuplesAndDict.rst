@@ -161,7 +161,6 @@ Some functions that work on lists return an **iterator** (an object that you can
 The ``range`` function also returns an iterator.
 
 .. fillintheblank:: funct_tuple_zip_first_print_fitb
-    :practice: T
 
     What is the first thing the code below prints?
 
@@ -191,7 +190,6 @@ Dictionaries
 A dictionary stores a value for a key.
 
 .. fillintheblank:: funct_dict_num_t
-    :practice: T
 
     What is the first thing the code below prints?
 
@@ -276,6 +274,7 @@ There is another way to update the value for a key that works even if the key is
     Drag the item to its type.
 
 .. mchoice:: funct_which_are_immutable_mc
+    :practice: T
 
     Which of the following types are immutable (don't change)?
 

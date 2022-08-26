@@ -3,8 +3,6 @@ Write Code Questions
 .. warning:: Be careful not to create infinite loops, as they will cause the page to freeze.
 
 
-
-
 .. tabbed:: itr-ex-countdown
 
     .. tab:: Question
@@ -40,18 +38,21 @@ Write Code Questions
 
             Fix the 5 errors in the code below to return a countdown of the numbers from 10 to 0, including 0.
             ~~~~
-
             def countdown():
                 counter = 10
                 answer = ""
+
                 # Keep running loop until counter equals 0 (use <=)
                 # Use correct variable name (counter is lowercase)
                 while counter >= 0:
                     answer = answer + str(counter) + " "
+
                     # Decrement to lower the counter
                     counter = counter - 1
+
                 # Keyword return is lowercase
                 return answer
+
             # Call correct function name (countdown)
             countdown()
 
@@ -64,7 +65,6 @@ Write Code Questions
             myTests().main()
 
 
-
 .. activecode:: itr-ex-100Loopq
     :practice: T
 
@@ -75,8 +75,6 @@ Write Code Questions
     while x < 100:
         print(x)
         x = x + 1
-
-
 
 .. tabbed:: itr-ex-count
 
@@ -113,12 +111,16 @@ Write Code Questions
             output = ""
             # Start x at -11 so it stays under 0
             x = -11
+
             # First line of a loop ends with a colon (:)
             while x < 0:
+
                 # Since the iteration variable is negative, increase the count
                 x = x + 1
+
                 # Output reassignment is within the loop
                 output = output + str(x) + " "
+                
             # Close print parentheses
             print(output)
 

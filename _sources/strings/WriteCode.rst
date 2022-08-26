@@ -145,9 +145,8 @@ Write-code questions
                    self.assertEqual(numDigits(1352),4,"Tested numDigits on input of 1352")
                    self.assertEqual(numDigits(444),3,"Tested numDigits on input of 444")
 
-
-
            myTests().main()
+
 
 
    .. tab:: Answer
