@@ -13,8 +13,8 @@ Problems
    :points: 10
 
 
-.. selectquestion:: fl-dict-to-list-ps-sq-write
-   :fromid: dict_to_list_pilot
+.. selectquestion:: fl-list_loop_two_lists-ps-sq-write
+   :fromid: list_loop_two_lists
    :points: 10
 
 .. selectquestion:: fl-has22-ps-sq-write
