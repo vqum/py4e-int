@@ -222,8 +222,8 @@ Multiple Choice Questions
     :answer_d: wlkng
     :correct: c
     :feedback_a: Not all of the characters will be added to the output string.
-    :feedback_b: This would be true if it didn't break when it sound an 'i'
-    :feedback_c: It will not all the 'a' and will stop when it reaches the 'i'
+    :feedback_b: This would be true if it didn't break when it found an 'i'
+    :feedback_c: It will not add the 'a' and will stop when it reaches the 'i'
     :feedback_d: This would be true if when it found an 'i' it did a continue rather than a break
 
     What will the following code print?
@@ -308,9 +308,9 @@ Multiple Choice Questions
     :answer_d: [3, -3, -2, 1]
     :correct: a
     :feedback_a: This adds any non negative values to the out list.
-    :feedback_b: This will not add any non
+    :feedback_b: This will not add any negative values to the list.
     :feedback_c: This would be true if the continue was a break
-    :feedback_d: This would be true if when it found an 'i' it did a continue rather than a break
+    :feedback_d: This would be true if it just added all values to out
 
     What will the following code print?
 
@@ -322,7 +322,7 @@ Multiple Choice Questions
                 if num < 0:
                     continue
                 else:
-                    out += num
+                    out.append(num)
             return out
 
         print(mystery([3, -3, -2, 1]))
@@ -390,3 +390,34 @@ Multiple Choice Questions
         for i in range(1,4):
             for j in range(1,4):
                 print(i, j, end=' ')
+
+.. mchoice:: e5mc16
+    :practice: T
+    :answer_a: 1018
+    :answer_b: 1009
+    :answer_c: 19
+    :answer_d: 10
+    :correct: d
+    :feedback_a: This would be true if it added all values in the list to total
+    :feedback_b: This would be true if it added the 999 to the list before the break
+    :feedback_c: This would be true if it used continue rather than break when it found 999
+    :feedback_d: This will return the total of the values in the list before the 999
+
+    What will the following code print?
+
+    ::
+
+        def mystery(nums):
+            total = 0
+            for num in nums:
+                if num == 999:
+                    break
+                else:
+                    total += num
+            return total
+            
+        mystery([8, 2, 999, 5, 4])
+
+
+
+        print(mystery("walking"))
