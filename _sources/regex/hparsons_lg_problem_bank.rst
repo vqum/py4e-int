@@ -6,7 +6,7 @@ Problem Bank for Practice Problems and Test Problems
 
 .. mchoice:: hparsons_lg_regex_test_mcq_1
 
-    What does a regex ``[^abc]`` mean?
+    What does ``[^abc]`` mean?
 
     -   Match a character that is one of ^, a, b, or c.
 
@@ -27,7 +27,7 @@ Problem Bank for Practice Problems and Test Problems
 
 .. mchoice:: hparsons_lg_regex_test_mcq_2
 
-    What does the pattern ``\d`` do in regex?
+    What does the pattern ``\d`` match?
 
     -   Matches any digit (0, 1, ..., 9).
 
@@ -76,47 +76,47 @@ Problem Bank for Practice Problems and Test Problems
 
 .. mchoice:: hparsons_lg_regex_test_mcq_4
 
-    What does pattern ``\w`` mean?
+    Which of the following best describes what ``\w`` matches?
 
     -   Any lowercase letter
 
-        -
+        - It matches more than this
 
     -   Any lowercase or uppercase letter
 
-        -
+        - It matches more than this
 
     -   Any lowercase or uppercase letter, or underscore
 
-        +
+        - It matches more than this
 
-    -   A word consisting of uppercase or lowercase letters
+    -   Any lowercase or uppercase letter, or underscore, or digit from 0-9
 
-        -
+        + It matches any lowercase or uppercase letter, or underscore, or digit from 0-9
 
     -   I don't know.
 
-        -
+        - That is okay
 
 
 .. mchoice:: hparsons_lg_regex_test_mcq_5
 
-    Which of the following pattern would match "A"s separated by individual "B"s in between, for example, "AAABAABAA", "ABAAA"?
+    Which of the following patterns would match "A"s separated by individual "B"s in between, for example, "AAABAABAA", "ABAAA"?
     Note that "B" should not appear consecutively, and should not appear as the first or last character. B must appear at least once.
 
-    -   (A+B)+A+
+    -   (?:A+B)+A+
 
         +
 
-    -   (A+B)*A+
+    -   (?:A+B)*A+
 
         -
 
-    -   (AB)+A+
+    -   (?:AB)+A+
 
         -
 
-    -   (A*B)+A+
+    -   (?:A*B)+A+
 
         -
 
@@ -127,17 +127,17 @@ Problem Bank for Practice Problems and Test Problems
 
 .. mchoice:: hparsons_lg_regex_test_mcq_6
 
-    Which of the following pattern would match both words "attend" and "attendee"?
+    Which of the following would match both words "attend" and "attendee"?
 
     -   attend|ee
 
         -
-    
+
     -   attend(ee){1,}
 
         -
 
-    -   attend(ee)?
+    -   attend(?:ee)?
 
         +
 
@@ -148,4 +148,3 @@ Problem Bank for Practice Problems and Test Problems
     -   I don't know.
 
         -
-
