@@ -12,7 +12,7 @@ Practice Problems - Regular Expressions
     gr
     [ae]
     y
-    a
+    {ae}
 
 
 .. hparsons:: hp-upper-lower-p2
@@ -27,6 +27,7 @@ Practice Problems - Regular Expressions
     [a-z]
     +
     \w
+    *
 
 
 .. hparsons:: hp-digits-p3
@@ -39,7 +40,8 @@ Practice Problems - Regular Expressions
     --blocks--
     \d
     {5,7}
-    {5}
+    /d
+    {5:7}
 
 
 .. hparsons:: hp-vowels-letter-not-vowel-p4
@@ -56,18 +58,22 @@ Practice Problems - Regular Expressions
     *
     [^aeiou]
     +
+    [!aeiou]
 
-.. hparsons:: hp-match-period-p5
+.. hparsons:: hp-match-period-p5-v2
     :language: regex
     :randomize:
-    :blockanswer: 0 1 2
+    :blockanswer: 0 1 2 3 4
 
     Write a regex that captures strings that have two digits followed by a period and then four letters from a to z.
     ~~~~
     --blocks--
-    \d{2}
+    \d
+    {2}
     \.
-    [a-z]{4}
+    [a-z]
+    {4}
     .
-    \d[2]
-    \w{4}
+    [2]
+    \w
+    [4]
