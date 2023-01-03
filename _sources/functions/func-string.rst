@@ -153,24 +153,6 @@ String Slices
     - :0: A slice starts at index 0 if the start isn't specified.
       :.*: Look at the code above and try again.
 
-.. mchoice:: funt_mc_end_slice
-   :practice: T
-
-   What index is the default end index if it isn't specified in a slice?
-
-   -   0
-
-       -   This is the default start index
-
-   -   -1 (the index of the last character)
-
-       -   Since a slice does not include the character at the specified end index this would stop at the second to last character in the string
-
-   -  the length of the string
-
-      +   The slice returns a string with all the characters from the start to the end minus one.  That is the same as the length of the string minus one.
-
-
 .. fillintheblank:: funct_fitb_len_string
     :practice: T
 
@@ -227,14 +209,6 @@ Input and Converting Between Strings and Numbers
     # function call
     get_name()
 
-.. fillintheblank:: funct_fitb_convert_string_int
-    :practice: T
-
-    What is the name of the built-in function that will convert a string to an integer?
-
-    - :int: This will convert a string to an integer
-      :.*: Look at the code above and try again.
-
 .. fillintheblank:: funct_fitb_convert_int_string
     :practice: T
 
@@ -265,10 +239,7 @@ Strings have methods (functions) that operate on a string object using **dot-not
     def get_user_name(first, last):
         print(first.lower())
         print(last.upper())
-        print(first.find('a'))
-        print(first.find('z'))
         print(last.replace("f", "1"))
-        print(first.split("a"))
         user = first.lower() + "_" + last.lower()
         return user
 
@@ -280,13 +251,6 @@ Strings have methods (functions) that operate on a string object using **dot-not
     # function call
     main()
 
-.. fillintheblank:: funct_fitb_pogil_find_return
-
-    What does the function ``find`` return if the character is not found in the string?
-
-    - :-1: If the character isn't in the string find returns -1.
-      :.*: Check the output of find('z') above
-
 .. note ::
 
    Strings are immutable, which means that they do not change.  String methods that appear to change a string return a new string.
@@ -297,13 +261,12 @@ Strings have methods (functions) that operate on a string object using **dot-not
     :match_1: replace|||Returns a new string with all instances of the first specified character replaced with the second specified character.
     :match_2: lower|||Returns a new string with all of the characters in lowercase.
     :match_3: upper|||Returns a new string with all of the characters in uppercase.
-    :match_4: split|||Returns a list of strings created by splitting the original string at the specified character.
-    :match_5: capitalize|||Returns a new string with the first letter capitalized (uppercase).
+    :match_4: capitalize|||Returns a new string with the first letter capitalized (uppercase).
 
     Drag each string method to the description of what it does.
 
 .. activecode:: funct_ac_pogil_strip_methods_v2
-    :caption: Example with strip, rstrip, lstrip, and find
+    :caption: Example with strip and find
 
     Run the code below to see what it prints.
     ~~~~
@@ -313,17 +276,12 @@ Strings have methods (functions) that operate on a string object using **dot-not
         s1 = the_string.strip()
         print(s1)
         print(len(s1))
-        s2 = the_string.rstrip()
-        print(s2)
-        print(len(s2))
-        s3 = the_string.lstrip()
-        print(s3)
-        print(s3)
         print(the_string.find('H'))
 
     # function definition
     def main():
         test(" Help! ")
+        test(" how are you? ")
 
     # function call
     main()
@@ -332,9 +290,7 @@ Strings have methods (functions) that operate on a string object using **dot-not
     :practice: T
     :feedback: Read the chapter on strings and try again
     :match_1: strip|||Returns a new string with leading and trailing spaces removed.
-    :match_2: rstrip|||Returns a new string with trailing spaces removed.
-    :match_3: lstrip|||Returns a new string with leading spaces removed.
-    :match_4: find|||Returns the starting index of a target string if found or -1 if not found.
+    :match_2: find|||Returns the starting index of a target string if found or -1 if not found.
 
     Drag each string method to the description of what it does.
 
