@@ -35,11 +35,11 @@ We are interested in getting information about mutliple UMSI professors: Dr. Bar
 
 Their webpages are:
 
-``https://www.si.umich.edu/people/barbara-ericson``
+``https://web.archive.org/web/20230128074139/https://www.si.umich.edu/people/``
 
-``https://www.si.umich.edu/people/steve-oney``
+``https://web.archive.org/web/20230128074139/https://www.si.umich.edu/people/``
 
-``https://www.si.umich.edu/people/paul-resnick``
+``https://web.archive.org/web/20230128074139/https://www.si.umich.edu/people/``
 
 In this code, we get a **soup** from multiple **UMSI faculty pages**.
 
@@ -51,7 +51,7 @@ In this code, we get a **soup** from multiple **UMSI faculty pages**.
    from bs4 import BeautifulSoup
    import requests
    <strong># Get a soup from <mark style="background-color:#FEF5E7">multiple URLs</mark></strong>
-   base_url = <mark style="background-color:#FEF5E7">'https://www.si.umich.edu/people/'</mark>
+   base_url = <mark style="background-color:#FEF5E7">'https://web.archive.org/web/20230128074139/https://www.si.umich.edu/people/'</mark>
    endings = <mark style="background-color:#FEF5E7">['barbara-ericson', 'steve-oney', 'paul-resnick']</mark>
    for ending in endings:
        url = base_url + ending
@@ -72,11 +72,11 @@ Look at the webpages you want to scrape and determine which parts they have in c
 Plan 3: Exercises
 ====================================
 
-If you want to also get the link to the most recent news item from Dean Tom Finholt's page, how would you change the code below? Dean Finholt's web page is ``https://www.si.umich.edu/people/thomas-finholt``.
+If you want to also get the link to the most recent news item from Dr Robin Brewer's page, how would you change the code below? Her web page is ``https://web.archive.org/web/20230110174202/https://www.si.umich.edu/people/robin-brewer``.
 
 Change the code and run it to see if you're right!
 
-.. activecode:: plan3_edit_finholt
+.. activecode:: plan3_edit_brewer
    :language: python3
    :nocodelens:
 
@@ -85,7 +85,7 @@ Change the code and run it to see if you're right!
    from bs4 import BeautifulSoup
    import requests
    # Get a soup from multiple URLs
-   base_url = 'https://www.si.umich.edu/people/'
+   base_url = 'https://web.archive.org/web/20230128074139/https://www.si.umich.edu/people/'
    endings = ['barbara-ericson', 'steve-oney', 'paul-resnick']
    for ending in endings:
        url = base_url + ending
