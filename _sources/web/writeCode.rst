@@ -242,16 +242,16 @@ and email address.
     fh.close()
     person_list = json.loads(data)
 
-The file ``person.json`` below contains JSON data for a person in a dictionary including their first name,
+The file ``person3.json`` below contains JSON data for a person in a dictionary including their first name,
 last name, address, and phone numbers.
 
-.. reveal:: person_data
+.. reveal:: person3_data_rev
     :showtitle: Show
     :hidetitle: Hide
 
     .. raw:: html
 
-       <pre id="person.json.">
+       <pre id="person3.json.">
        {
          "firstName": "John",
          "lastName": "Smith",
@@ -281,16 +281,16 @@ last name, address, and phone numbers.
          "spouse": null
        }
 
-.. datafile:: person.json
-    :fromfile: person.json
+.. datafile:: person3.json
+    :fromfile: person3.json
     :hide:
 
-.. activecode:: web_email_person_write
+.. activecode:: web_email_person_write_v2
     :language: python3
     :nocodelens:
-    :datafile: person.json
+    :datafile: person3.json
 
     Finish the code below so that it prints the first name, last name, the
-    state the person lives in, and their mobile phone number.
+    state the person lives in, and their mobile phone number from the JSON loaded from ``person3.json``.
     ~~~~
     import json
