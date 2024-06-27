@@ -18,10 +18,14 @@ For learning purposes, we are using the shortened version of this file
 ``mbox-short.txt`` This file can be found and downloaded from
 `www.py4e.com/code3/mbox-short.txt <http://www.py4e.com/code3/mbox-short.txt>`_
 
+.. datafile:: mbox-short.txt
+    :fromfile: mbox-short.txt
+    :hide:
+
 Click on the button to show the first lines from this file.
 
 
-.. reveal:: mbox-short.txt
+.. reveal:: mbox-short
    :showtitle: Show
    :hidetitle: Hide
 
@@ -73,7 +77,6 @@ Click on the button to show the first lines from this file.
       X-DSPAM-Processed: Sat Jan  5 09:14:16 2008
       X-DSPAM-Confidence: 0.8475
       X-DSPAM-Probability: 0.0000
-
 
 .. activecode:: fileOpen
     :caption: Opening a file
