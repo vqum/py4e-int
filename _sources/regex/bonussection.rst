@@ -35,17 +35,17 @@ regular expression support in ``grep``. As an example,
 notation ``[^ ]``\ , which simply means match a character that is anything
 other than a space.
 
-.. mchoice:: regex_grep_mcq
+.. mchoice:: regex_grep_mcq_rev3
     :multiple_answers:
     :practice: T
-    :answer_a: $ grep '\$[0-9.]+' mbox-short.txt
-    :answer_b: $ grep '\$[0-9]+'
-    :answer_c: $ grep '\$[/d.]+' mbox-short.txt
+    :answer_a: $ grep '\\$[0-9.]+' mbox-short.txt
+    :answer_b: $ grep '\\$[0-9]+'
+    :answer_c: $ grep '\\$[\\d.]+' mbox-short.txt
     :answer_d: $ grep '$[0-9.]+' mbox-short.txt
     :correct: a,c
     :feedback_a: Correct! This is the correct way to use grep to find prices in a file.
     :feedback_b: Make sure to include the file name!
-    :feedback_c: Correct! This uses the /d regex character to find prices in mbox-short.txt.
+    :feedback_c: Correct! This uses the \\d regex character to find the 0-9 digits in mbox-short.txt.
     :feedback_d: Remeber that a '$' is a special character in regex. How do you tell it to look for an actual '$'? 
 
     Which option(s) properly uses the grep command-line to search for prices? Select all that apply.
